@@ -1,0 +1,415 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    margin: 0;
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    /* background-color: rgb(239, 239, 239); */
+}
+
+.material-symbols-outlined
+{
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+    font-size: 17px !important;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    padding: 80px 150px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.heading
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0px;
+}
+
+.heading h1
+{
+    font-size: 40px;
+}
+
+.heading p
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(72, 72, 72);
+}
+
+.heading form
+{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.heading input
+{
+    padding: 10px 15px;
+    width: 400px;
+    border: 1px solid rgb(162, 162, 162);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+}
+
+
+.cards
+{
+    display: flex;
+    column-gap: 3%;
+    row-gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cards .card
+{
+    width: 22.75%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.cards .card h3:hover
+{
+    cursor: pointer;
+}
+
+.cards .card img
+{
+    height: 250px;
+    background: url('imgs/6.webp') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: cover;
+    width: 100%;
+    filter: blur(1.2px) opacity(0.5);
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+
+}
+
+.pagination
+{
+    padding: 0px 20px;
+    padding-bottom: 80px;
+    display: grid;
+    place-items: center;
+}
+
+.paginationWrap
+{
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.pagination .num
+{
+    border: none;
+    padding: 3px 10px;
+    cursor: pointer;
+    font-size: 13px;
+    background-color: white;
+}
+
+.pagenum
+{
+    display: flex;
+}
+
+.paginationWrap h4
+{
+    margin: 3px 3px;
+    cursor: pointer;
+    font-size: 14.5px;
+}
+
+.pagination .active
+{
+    font-size: 13px;
+    padding: 3px 10px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.pagination .disabled
+{
+    color: #c0c0c0;
+    cursor: not-allowed;
+    margin: 3px 3px;
+    font-size: 14.5px;
+}
+
+footer
+{
+    border-top: 2px solid black;
+    ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.hide
+{
+    display: none;
+}
+
+
+.modal
+{
+    background-color: #00000085;
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    display: grid;
+    place-items: center;
+    display: none;
+}
+.swname{
+    text-align: center;
+}
+
+.modalCard
+{
+    background-color: white;
+    padding: 30px 20px;
+    padding-top: 40px;
+    width: 300px;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.modalCard img
+{
+    width: 100%;
+    border-radius: 5px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid rgb(225, 225, 225);
+}
+
+.modalCard .close
+{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-weight: 500;
+}
+
+.modalCard .close:hover
+{
+    color: red;
+    cursor: pointer;
+}
+
+.details
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.details h3
+{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.details p
+{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(64, 64, 64);
+}
+
+.details p span
+{
+    font-weight: 600;
+    color: black;
+}
+
+
+@media(max-width: 1300px)
+{
+    .wrapper
+    {
+        padding: 80px 80px;
+    }
+}
+
+@media(max-width: 1000px)
+{
+    .wrapper
+    {
+        padding: 80px 50px;
+    }
+}
+
+@media(max-width: 900px)
+{
+    .cards .card
+    {
+        width: 31.3%;
+    }
+}
+
+@media(max-width: 750px)
+{
+    .wrapper
+    {
+        padding: 80px 30px;
+    }
+
+    .heading h1
+    {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 628px)
+{
+    .cards .card
+    {
+        width: 48.5%;
+
+    }
+}
+
+@media(max-width: 500px)
+{
+    .wrapper
+    {
+        row-gap: 80px;
+    }
+
+    .heading h1
+    {
+        font-size: 32px;
+    }
+
+    .heading p
+    {
+        font-size: 14px;
+    }
+
+    .heading input
+    {
+        width: 300px;
+        padding: 8px 15px;
+    }
+
+    .heading .search
+    {
+        padding: 8px 15px;
+        padding-left: 10px;
+    }
+
+    .modalCard
+    {
+        width: 70%;
+    }
+
+    .modalCard h3
+    {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 450px)
+{
+    .wrapper
+    {
+        row-gap: 60px;
+    }
+
+    .cards .card
+    {
+        width: 100%;
+
+
+    }
+
+    .heading h1
+    {
+        font-size: 28px;
+    }
+
+
+    .cards .card img
+    
+    {
+        height: 350px;
+    }
+
+    .cards .card h3
+    {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .heading input
+    {
+        width: 250px;
+    }
+
+    .wrapper
+    {
+        padding: 60px 20px;
+    }
+
+    footer
+    {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .modalCard
+    {
+        width: 95%;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 0px;
+    }
+}
+
+@media(max-width: 350px)
+{
+    .heading input
+    {
+        width: 100%;
+    }
+
+    .heading h1
+    {
+        font-size: 25px;
+    }
+}
